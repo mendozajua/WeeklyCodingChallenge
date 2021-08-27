@@ -3,9 +3,16 @@
 Java Reactive:
 Submit the answers to the below questions:
 1) What does Asynchrony mean in the context of Reactive Systems?
+    - it simply is refering to the sections of that is independent of the flow of the main program. The goal is to stop bottlenecking the main thread.
+
 2) What is Elasticity in contrast to Scalability?
+    - Elasticity refers to being able to "mold or stretch" our resources to what we actually need. While scalability comes in two flavlors. Vertical and horizontal scaling, vertical means that we add resources too our single machine to make up for resources needed. While horizontal scaling is adding more rescources(pc/servers) to reach what is needed. 
+
 3) Define the Actor Model?
+    - There is an Actor(similar to object in OOP or a single unit of code), has the following operations; create actor, send a message, or decide how to handle next message. Actor has its private state that needs a message in order to update, they do not take up memory. Actors process the data in FIFO order and work asychronously and thus do not need to wait on each other. There is a heichary of actors, sort of like strucuture of employment where this a top level supervisor and then a few superviosr below them and finally the actors, they can decide if they need to resart the actors, delete them or start new ones. 
+
 4) Mention a few similarities between Redux and RxJS.
+    - Redux is a state management tool for dealing with state on the web application and Rxjs is a reactive library for dealing with asnchy code and callbacks.
 
 Create a function that takes a number as an argument and returns true if the number is a valid credit card number, false otherwise.
 
